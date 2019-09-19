@@ -1,4 +1,4 @@
-package education.phoenixfate.com.model;
+package com.phoenixfate.education.model;
 
 
 public class  User {
