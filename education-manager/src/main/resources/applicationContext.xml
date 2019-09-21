@@ -31,7 +31,7 @@
         <!-- 指定配置文件位置 -->
         <!--<property name ="co nfigLocation" value="classpath:mybatis.xml"/>-->
         <!--配置别名-->
-        <property name="typeAliasesPackage" value="com.phoenixfate.education.model"></property>
+        <property name="typeAliasesPackage" value="com.phoenixfate.education.model"/>
 
         <!--配置加载映射文件 UserMapper.xml-->
         <property name="mapperLocations" value="classpath:com/phoenixfate/education/mapper/*Mapper.xml"/>
