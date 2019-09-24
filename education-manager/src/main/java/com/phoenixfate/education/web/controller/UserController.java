@@ -2,13 +2,14 @@ package com.phoenixfate.education.web.controller;
 
 import com.phoenixfate.education.model.User;
 import com.phoenixfate.education.service.IUserService;
+import com.phoenixfate.education.web.controller.base.BaseController;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping("user")
-public class UserController {
+public class UserController extends BaseController<User> {
 
     @Autowired
     private IUserService userService;
@@ -29,18 +30,19 @@ public class UserController {
 
     @RequestMapping("manage")
     public String manage(){
-        return "User/UserManage";
+
+        return MANAGE_PAGE;
     }
 
     @RequestMapping("info")
     public String info(){
-        return "User/UserInfo";
+        return INFO_PAGE;
     }
 
 
     @RequestMapping("edit")
     public String edit(){
-        return "User/UserEdit";
+        return EDIT_PAGE;
     }
 
 }
