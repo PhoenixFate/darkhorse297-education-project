@@ -28,19 +28,19 @@ public class UserController extends BaseController<User> {
     }
 
 
-    @RequestMapping("manage")
+    @RequestMapping(MANAGE)
     public String manage(){
 
         return MANAGE_PAGE;
     }
 
-    @RequestMapping("info")
+    @RequestMapping(INFO)
     public String info(){
         return INFO_PAGE;
     }
 
 
-    @RequestMapping("edit")
+    @RequestMapping(EDIT)
     public String edit(){
         return EDIT_PAGE;
     }

@@ -1,27 +1,30 @@
 package com.phoenixfate.education.web.controller;
 
+import com.phoenixfate.education.model.Department;
+import com.phoenixfate.education.web.controller.base.BaseController;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping("department")
-public class DepartmentController {
+public class DepartmentController extends BaseController<Department> {
 
 
-    @RequestMapping("manage")
+    @RequestMapping(MANAGE)
     public String manage(){
-        return "department/manage";
+
+        return MANAGE_PAGE;
     }
 
-    @RequestMapping("info")
+    @RequestMapping(INFO)
     public String info(){
-        return "department/info";
+        return INFO_PAGE;
     }
 
 
-    @RequestMapping("edit")
+    @RequestMapping(EDIT)
     public String edit(){
-        return "department/edit";
+        return EDIT_PAGE;
     }
 
 }

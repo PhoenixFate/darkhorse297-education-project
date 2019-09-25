@@ -20,7 +20,7 @@ public class UserServiceImpl extends BaseServiceImpl<User> implements IUserServi
 
     @Override
     public User findById(Serializable id)  {
-        User user = userMapper.findById(id);
+        User user = userMapper.selectByPrimaryKey((Integer) id);
         return user;
     }
 
