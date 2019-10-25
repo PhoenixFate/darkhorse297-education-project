@@ -12,7 +12,7 @@ public class Main {
     public static void main(String[] args)throws Exception {
         List<String> warnings = new ArrayList<String>();
         boolean overwrite = true;
-        File configFile = new File("/Users/phoenixfate/IdeaProjects/darkhorse297-education-project/education-auto-generator/src/generator.xml");
+        File configFile = new File("education-auto-generator/src/generator2.xml");
         ConfigurationParser cp = new ConfigurationParser(warnings);
         Configuration config = cp.parseConfiguration(configFile);
         DefaultShellCallback callback = new DefaultShellCallback(overwrite);
